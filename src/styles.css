@@ -35,8 +35,8 @@ body {
 }
 
 .correctAnswer {
-  margin-top: 100px;
   text-align: center;
+  font-size: 150px;
 }
 
 .option {
