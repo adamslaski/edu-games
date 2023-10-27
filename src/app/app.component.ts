@@ -20,7 +20,7 @@ import { Component } from '@angular/core';
     `,
 })
 export class AppComponent {
-  title = 'cyferki';
+  title = 'numbers';
   options!: number[];
   x!: number;
 

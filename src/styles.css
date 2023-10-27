@@ -7,12 +7,31 @@ body {
 }
 
 .excersizeContainer {
-  width: 600px;
   margin: 10px auto 0;
-  font-size: 100px;
-  font-variant-caps: small-caps;
   display: flex;
   justify-content: space-between;
+}
+
+
+@media screen and (max-width: 400px) {
+  .excersizeContainer {
+    width: 80%;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 400px) {
+  .excersizeContainer {
+    width: 80%;
+    font-size: 70px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .excersizeContainer {
+    width: 600px;
+    font-size: 100px;
+  }
 }
 
 .correctAnswer {
@@ -23,7 +42,6 @@ body {
 .option {
   margin-top: 10px;
   text-align: center;
-  font-size: 150px;
   font-variant-caps: small-caps;
   margin-right: 20px;
 }
