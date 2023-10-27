@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: 'Verdana', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.excersizeContainer {
+  width: 600px;
+  margin: 10px auto 0;
+  font-size: 100px;
+  font-variant-caps: small-caps;
+  display: flex;
+  justify-content: space-between;
+}
+
+.correctAnswer {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.option {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 150px;
+  font-variant-caps: small-caps;
+  margin-right: 20px;
+}
+
+div.levelSettings {
+  margin: 15px;
+}
+
+span.levelSettings {
+  background-color: #c48691;
+  padding: 9px;
+  border-radius: 6px;
+}
