@@ -23,6 +23,6 @@ import { Game } from '../game';
 })
 export class Game2Component extends Game {
   constructor() {
-    super(4);
+    super(4, 20);
   }
 }

@@ -12,6 +12,9 @@ body {
   justify-content: space-between;
 }
 
+.excersizeContainer > span {
+  cursor: pointer;
+}
 
 @media screen and (max-width: 400px) {
   .excersizeContainer {

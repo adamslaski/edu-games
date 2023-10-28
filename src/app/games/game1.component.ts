@@ -19,10 +19,11 @@ import { Game } from '../game';
       </ng-container>
     </div>
     `,
+  styles: ['.correctAnswer { margin-top: 40px; }']
 })
 
 export class Game1Component extends Game {
   constructor() {
-    super(3);
+    super(3, 20);
   }
 }
