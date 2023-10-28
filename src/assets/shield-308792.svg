@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161.01 162.85">
+ <defs>
+  <linearGradient id="g" x1=".58421" x2="1.3577" y1=".28593" y2=".048635">
+   <stop stop-color="#989898" stop-opacity=".624" offset="0"/>
+   <stop stop-color="#ccc" stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="f" x1="1.2368" x2="-.1491" y1=".36384" y2=".49999">
+   <stop stop-color="#122f14" offset="0"/>
+   <stop stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="h" x1="132.35" x2="30.35" y1="80.496" y2="156.68" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#d72906" offset="0"/>
+   <stop stop-color="#684342" stop-opacity=".498" offset="1"/>
+   <stop stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="e" x1=".58421" x2="1.3577" y1=".28593" y2=".048635">
+   <stop stop-color="#231949" stop-opacity=".339" offset="0"/>
+   <stop stop-opacity="0" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g fill-rule="evenodd">
+  <path d="m29.31 31.639c-3.8682 51.785 17.115 93.163 55.083 118.23 0.85375 0.74808 1.2247 0.56819 2.1099-0.074585 37.894-25.075 58.834-66.424 54.97-118.16-43.038-11.276-72.988-11.135-112.16 0z" fill="url(#g)" stroke="url(#e)" stroke-width=".928"/>
+  <path d="m132.74 38.005c3.2824 45.189-14.523 81.297-46.741 103.17-0.72446 0.6528-1.0392 0.49582-1.7904-0.065063-32.155-21.881-49.924-57.964-46.645-103.11 34.954-9.572 61.935-9.7169 95.177 0z" fill="#007f00" stroke="url(#f)" stroke-width=".798"/>
+ </g>
+ </svg>

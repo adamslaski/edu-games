@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="50 50 600.09 600.4" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="f">
+   <feGaussianBlur stdDeviation="2.71777"/>
+  </filter>
+  <clipPath id="e">
+   <path d="m340.41 191.34v400h120v-400h-120zm-140.41 1.0312v400h120v-400h-120z" fill="#d5f6ff" fill-opacity=".85441"/>
+  </clipPath>
+  <linearGradient id="g" x1="230" x2="450" y1="362.36" y2="582.36" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" stop-opacity=".66667" offset="0"/>
+   <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="h" x1="200" x2="460.41" y1="391.86" y2="391.86" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#d5f6ff" offset="0"/>
+   <stop stop-color="#d5f6ff" stop-opacity="0" offset="1"/>
+  </linearGradient>
+ </defs>
+ <path d="m340.41 191.34v400h120v-400h-120zm-140.41 1.0312v400h120v-400h-120z" fill="#87aade"/>
+ <path d="m340.41 191.34v400h120v-400h-120zm-140.41 1.0312v400h120v-400h-120z" fill="url(#h)"/>
+ <path d="m160 152.38v480h340v-40h-0.1875v-400h0.1875v-40h-340zm39.812 40h120.19v110h-120.19v-110zm140.19 0h119v110h-119v-110zm-140.19 130h120.19v270h-120.19v-270zm140.19 0h119v270h-119v-270z" fill="#803300"/>
+ <path d="m170 162.38v460h320v-460h-320zm20 20h280v420h-280v-420z" fill="#5a2400" fill-opacity=".72031" filter="url(#f)"/>
+ <path transform="translate(-1.389)" d="m640.44 544.32a205.22 201.96 0 1 1 -410.44 0 205.22 201.96 0 1 1 410.44 0z" clip-path="url(#e)" fill="url(#g)"/>
+ <path d="m195 187.38v115h5v-110h120v-5h-125z" fill="#1a1a1a" fill-opacity=".52107"/>
+ <path d="m335 187.38v115h4.9571v-110h118.97v-5h-123.93z" fill="#1a1a1a" fill-opacity=".52107"/>
+ <path d="m195 317.38v275h5v-270h120v-5h-125z" fill="#1a1a1a" fill-opacity=".52107"/>
+ <path d="m335 317.38v275h4.9571v-275h-4.9571zm5.0191 0v5h118.91v-5h-118.91z" fill="#1a1a1a" fill-opacity=".52107"/>
+ <path d="m500 152.38l-10 10v470h10v-480z" fill="#4b260e"/>
+ <path d="m170 622.38l-10 10h330v-10h-320z" fill="#4b260e"/>
+</svg>

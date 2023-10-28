@@ -14,6 +14,7 @@ import { MatIconAnchor } from '@angular/material/button';
         <mat-nav-list>
           <a mat-list-item routerLinkActive="link-active" routerLink="/game1">Liczby</a>
           <a mat-list-item routerLinkActive="link-active" routerLink="/game2">Kropki</a>
+          <a mat-list-item routerLinkActive="link-active" routerLink="/reading">Czytanie</a>
         </mat-nav-list>
         <hr/>
         <mat-button-toggle-group (change)="stateService.setDifficulty($event.value)" [value]="stateService.getDifficulty()">

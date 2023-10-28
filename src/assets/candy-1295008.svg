@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="480" height="290" enable-background="new" version="1.0" viewBox="0 0 480 289.99998" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="a" x1="511.4" x2="563.31" y1="410.68" y2="410.68" gradientTransform="matrix(3.0037,0,0,3.0037,-1484.8,-941.88)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fefffe" offset="0"/>
+   <stop stop-color="#64c130" offset="1"/>
+  </linearGradient>
+  <filter id="b" color-interpolation-filters="sRGB">
+   <feColorMatrix in="SourceGraphic" result="colormatrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.2125 -0.7154 -0.0721 1 0 "/>
+   <feComposite in="SourceGraphic" in2="colormatrix" k2="1" operator="arithmetic" result="composite"/>
+   <feGaussianBlur result="blur1" stdDeviation="3.03 0.01"/>
+   <feGaussianBlur in="composite" result="blur2" stdDeviation="0.01 3.03"/>
+   <feBlend in="blur2" in2="blur1" mode="darken" result="blend"/>
+  </filter>
+  <filter id="q" color-interpolation-filters="sRGB">
+   <feColorMatrix in="SourceGraphic" result="colormatrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.2125 -0.7154 -0.0721 1 0 "/>
+   <feComposite in="SourceGraphic" in2="colormatrix" k2="1" operator="arithmetic" result="composite"/>
+   <feGaussianBlur result="blur1" stdDeviation="3.03 0.01"/>
+   <feGaussianBlur in="composite" result="blur2" stdDeviation="0.01 3.03"/>
+   <feBlend in="blur2" in2="blur1" mode="darken" result="blend"/>
+  </filter>
+  <filter id="o" color-interpolation-filters="sRGB">
+   <feColorMatrix in="SourceGraphic" result="colormatrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.2125 -0.7154 -0.0721 1 0 "/>
+   <feComposite in="SourceGraphic" in2="colormatrix" k2="1" operator="arithmetic" result="composite"/>
+   <feGaussianBlur result="blur1" stdDeviation="3.03 0.01"/>
+   <feGaussianBlur in="composite" result="blur2" stdDeviation="0.01 3.03"/>
+   <feBlend in="blur2" in2="blur1" mode="darken" result="blend"/>
+  </filter>
+  <filter id="s" color-interpolation-filters="sRGB">
+   <feColorMatrix in="SourceGraphic" result="colormatrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.2125 -0.7154 -0.0721 1 0 "/>
+   <feComposite in="SourceGraphic" in2="colormatrix" k2="1" operator="arithmetic" result="composite"/>
+   <feGaussianBlur result="blur1" stdDeviation="3.03 0.01"/>
+   <feGaussianBlur in="composite" result="blur2" stdDeviation="0.01 3.03"/>
+   <feBlend in="blur2" in2="blur1" mode="darken" result="blend"/>
+  </filter>
+  <filter id="m" color-interpolation-filters="sRGB">
+   <feColorMatrix in="SourceGraphic" result="colormatrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.2125 -0.7154 -0.0721 1 0 "/>
+   <feComposite in="SourceGraphic" in2="colormatrix" k2="1" operator="arithmetic" result="composite"/>
+   <feGaussianBlur result="blur1" stdDeviation="3.03 0.01"/>
+   <feGaussianBlur in="composite" result="blur2" stdDeviation="0.01 3.03"/>
+   <feBlend in="blur2" in2="blur1" mode="darken" result="blend"/>
+  </filter>
+  <filter id="l" color-interpolation-filters="sRGB">
+   <feColorMatrix in="SourceGraphic" result="colormatrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.2125 -0.7154 -0.0721 1 0 "/>
+   <feComposite in="SourceGraphic" in2="colormatrix" k2="1" operator="arithmetic" result="composite"/>
+   <feGaussianBlur result="blur1" stdDeviation="3.03 0.01"/>
+   <feGaussianBlur in="composite" result="blur2" stdDeviation="0.01 3.03"/>
+   <feBlend in="blur2" in2="blur1" mode="darken" result="blend"/>
+  </filter>
+  <filter id="r" color-interpolation-filters="sRGB">
+   <feColorMatrix in="SourceGraphic" result="colormatrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.2125 -0.7154 -0.0721 1 0 "/>
+   <feComposite in="SourceGraphic" in2="colormatrix" k2="1" operator="arithmetic" result="composite"/>
+   <feGaussianBlur result="blur1" stdDeviation="3.03 0.01"/>
+   <feGaussianBlur in="composite" result="blur2" stdDeviation="0.01 3.03"/>
+   <feBlend in="blur2" in2="blur1" mode="darken" result="blend"/>
+  </filter>
+  <filter id="p" color-interpolation-filters="sRGB">
+   <feColorMatrix in="SourceGraphic" result="colormatrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.2125 -0.7154 -0.0721 1 0 "/>
+   <feComposite in="SourceGraphic" in2="colormatrix" k2="1" operator="arithmetic" result="composite"/>
+   <feGaussianBlur result="blur1" stdDeviation="3.03 0.01"/>
+   <feGaussianBlur in="composite" result="blur2" stdDeviation="0.01 3.03"/>
+   <feBlend in="blur2" in2="blur1" mode="darken" result="blend"/>
+  </filter>
+  <filter id="t" color-interpolation-filters="sRGB">
+   <feColorMatrix in="SourceGraphic" result="colormatrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.2125 -0.7154 -0.0721 1 0 "/>
+   <feComposite in="SourceGraphic" in2="colormatrix" k2="1" operator="arithmetic" result="composite"/>
+   <feGaussianBlur result="blur1" stdDeviation="3.03 0.01"/>
+   <feGaussianBlur in="composite" result="blur2" stdDeviation="0.01 3.03"/>
+   <feBlend in="blur2" in2="blur1" mode="darken" result="blend"/>
+  </filter>
+  <filter id="n" color-interpolation-filters="sRGB">
+   <feColorMatrix in="SourceGraphic" result="colormatrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.2125 -0.7154 -0.0721 1 0 "/>
+   <feComposite in="SourceGraphic" in2="colormatrix" k2="1" operator="arithmetic" result="composite"/>
+   <feGaussianBlur result="blur1" stdDeviation="3.03 0.01"/>
+   <feGaussianBlur in="composite" result="blur2" stdDeviation="0.01 3.03"/>
+   <feBlend in="blur2" in2="blur1" mode="darken" result="blend"/>
+  </filter>
+ </defs>
+ <g transform="translate(0 -310)">
+  <g transform="matrix(.49369 0 0 .49369 40.138 293.05)">
+   <path d="m330.55 130.89z" fill="#e9e9ff" fill-rule="evenodd"/>
+   <path d="m330.55 130.89z" fill="#afafde" fill-rule="evenodd"/>
+   <path d="m330.55 130.89z" fill="#d7d7ff" fill-rule="evenodd"/>
+   <path d="m330.55 130.89z" fill="#8686bf" fill-rule="evenodd"/>
+   <path d="m330.55 130.89z" fill="#4d4d9f" fill-rule="evenodd"/>
+   <path d="m330.55 130.89z" fill="#353564" fill-rule="evenodd"/>
+   <path d="m254.08 270.25c57.38-14.41 86-81.08 251 1.25 89.13 108.18 20.75 144.46-38.71 184.81-60.16 23.16-122.24 35.44-192.31 2.5-51.73-41.8-119.71-113.49-19.98-188.56z" fill="#eeec04" stroke="#000" stroke-width="5"/>
+   <path d="m275.72 380.18c38.4 5.43 72.23 1.07 97.39 5.97 36.54 7.12 91.05-18.74 109.81-53.52l-17.52 41.15-32.35 23.88c-35.38 11.45-70.76 7.48-106.14 6.25-37.51-7.91-42.53-15.82-51.19-23.73z" fill="#fafcc6" opacity=".81712"/>
+   <path d="m240.7 305.77c27.62-19.37 79.74-86 209.76-33.57-62.1-8.25-120.82-11.72-178.35 16.92l-31.41 16.65z" fill="#ffffd1" opacity=".58366"/>
+   <path d="m223.56 331.87c20.456 34.1 37.764 61.761 60.333 70.784 37.896 15.151 98.908 17.059 143.17 5.6864 20.136-5.1695 30.93-19.193 40.743-33.339 11.19-16.129 27.593-57.494 48.653-60.934 9.493 3.8912 16.412 12.04 19.42 26.703 12.123 24.973-2.2342 37.944-12.924 52.578-48.964 50.896-210.46 156.69-309.94-19.418-10.539-24.917 2.7527-31.355 10.549-42.061z" fill="#ffbe1e" opacity=".6537"/>
+   <g stroke="#000">
+    <path d="m193.64 231.41c7.3033 21.097 14.607 42.193 21.91 63.29-6.6033 21.39-13.207 42.78-19.81 64.17-33.563 19.183-67.127 38.367-100.69 57.55-11.031-20.54-22.061-41.08-33.092-61.62-6.8213-0.15333-13.643-0.30667-20.464-0.46 3.0028-22.996 5.4465-46.112 8.7979-69.032 8.0874-26.033 16.175-52.065 24.262-78.098 4.229-0.0867 8.458-0.17333 12.687-0.26 9.4397-12.237 18.879-24.473 28.319-36.71 10.51-0.0333 21.02-0.0667 31.53-0.1 15.517 20.423 31.033 40.847 46.55 61.27z" fill="#5fce7d" stroke-width="5"/>
+    <path d="m134.47 179.16c48.52 39.2 78.47 111.91 58.227 165.05-32.29 35.69-61.647 42.195-100.08 56.385l-41.389-83.98c9.32-60.87 38.778-102.14 83.238-137.45z" fill="url(#a)" filter="url(#b)" opacity=".77043" stroke-width=".05"/>
+    <path d="m58.534 319.04c39.999 30.16 91.576 20.75 132.68 3.65-26.42 14.15-31.67 33-83.99 41.39-41.753-9.91-36.107-29.29-48.686-45.04z" fill="#12941d" filter="url(#q)" opacity=".49805" stroke-width=".05"/>
+    <path d="m121.83 292.27c19.48 8.72 40.99 16.42 66.94 21.9-35.57 33.67-74.38 23.04-113.2-14.6l46.26-7.3z" fill="#3e8136" filter="url(#o)" opacity=".49805" stroke-width=".05"/>
+    <path d="m168.08 265.49 31.65 36.317-32.87-3.4574-32.86-26.78z" fill="#004f17" filter="url(#s)" opacity=".49805" stroke-width=".05"/>
+    <path d="m143.77 234.01 48.654 38.249-8.9695-1.3358-25.476-20.229 28.238 44.137-11.49 3.2004-80.629-57.648 12.164-13.812z" fill="#298d00" filter="url(#m)" opacity=".49805" stroke-width=".042635"/>
+   </g>
+   <path d="m219.39 353.67c65.82 140.17 267.69 87.77 305.41-10.37-1.56 115.05-292 148.16-305.41 10.37z" fill="#f3b51c" opacity=".8677"/>
+   <path d="m409.33 278.5c16.77-4.74 74.55 9.38 80.1 25.84 7.02 20.8-3.19 30.46-5.13 22.74 6.92-19.92-37.26-46.84-74.97-48.58z" fill="#ffffd1" opacity=".58366"/>
+   <g transform="matrix(-.91114 -.4121 -.4121 .91114 871.14 155.06)" stroke="#000">
+    <path d="m193.64 231.41c7.3033 21.097 14.607 42.193 21.91 63.29-6.6033 21.39-13.207 42.78-19.81 64.17-33.563 19.183-67.127 38.367-100.69 57.55-11.031-20.54-22.061-41.08-33.092-61.62-6.8213-0.15333-13.643-0.30667-20.464-0.46 3.0028-22.996 5.4465-46.112 8.7979-69.032 8.0874-26.033 16.175-52.065 24.262-78.098 4.229-0.0867 8.458-0.17333 12.687-0.26 9.4397-12.237 18.879-24.473 28.319-36.71 10.51-0.0333 21.02-0.0667 31.53-0.1 15.517 20.423 31.033 40.847 46.55 61.27z" fill="#5fce7d" stroke-width="5"/>
+    <path d="m134.47 179.16c48.52 39.2 78.47 111.91 58.227 165.05-32.29 35.69-61.647 42.195-100.08 56.385l-41.389-83.98c9.32-60.87 38.778-102.14 83.238-137.45z" fill="url(#a)" filter="url(#l)" opacity=".77043" stroke-width=".05"/>
+    <path d="m58.534 319.04c39.999 30.16 91.576 20.75 132.68 3.65-26.42 14.15-31.67 33-83.99 41.39-41.753-9.91-36.107-29.29-48.686-45.04z" fill="#12941d" filter="url(#r)" opacity=".49805" stroke-width=".05"/>
+    <path d="m121.83 292.27c19.48 8.72 40.99 16.42 66.94 21.9-35.57 33.67-74.38 23.04-113.2-14.6l46.26-7.3z" fill="#3e8136" filter="url(#p)" opacity=".49805" stroke-width=".05"/>
+    <path d="m168.08 265.49 31.65 36.317-32.87-3.4574-32.86-26.78z" fill="#004f17" filter="url(#t)" opacity=".49805" stroke-width=".05"/>
+    <path d="m143.77 234.01 48.654 38.249-8.9695-1.3358-25.476-20.229 28.238 44.137-11.49 3.2004-80.629-57.648 12.164-13.812z" fill="#298d00" filter="url(#n)" opacity=".49805" stroke-width=".042635"/>
+   </g>
+  </g>
+ </g>
+</svg>

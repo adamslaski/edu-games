@@ -25,7 +25,7 @@ function getOptions(range: number, max: number, numberOfOptions: number) {
   return shuffle(a).slice(0, numberOfOptions);
 }
 
-function shuffle<T>(arr: T[]): T[] { 
+export function shuffle<T>(arr: T[]): T[] { 
   const numbers = new Uint32Array(arr.length);
   window.self.crypto.getRandomValues(numbers);
   const result = arr.map((v, i) => ({v, i: numbers[i]})); 

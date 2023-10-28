@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 372.77139 350.83377" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <clipPath id="b">
+   <path d="m1349.1-106.15v-302.9c-47.87-80.883-146.04-44.394-170.21 0-74.551 130.57 130.51 196.54 170.21 302.9z"/>
+   <path d="m1349.1-106.15v-302.9c47.87-80.883 146.04-44.394 170.21 0 74.551 130.57-130.51 196.54-170.21 302.9z"/>
+  </clipPath>
+  <filter id="e" x="-.16711" y="-.17756" width="1.3342" height="1.3551">
+   <feGaussianBlur stdDeviation="25.9554"/>
+  </filter>
+  <linearGradient id="a">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="c" x2="0" y1="386.95" y2="490.04" gradientUnits="userSpaceOnUse" xlink:href="#a"/>
+  <linearGradient id="d" x2="0" y1="387.32" y2="490.41" gradientUnits="userSpaceOnUse" xlink:href="#a"/>
+ </defs>
+ <g transform="translate(-202.19 -396.95)">
+  <g transform="translate(-960.58 853.93)" clip-path="url(#b)">
+   <path d="m1349.1-106.15v-302.9c-47.87-80.883-146.04-44.394-170.21 0-74.551 130.57 130.51 196.54 170.21 302.9z"/>
+   <path d="m1349.1-106.15v-302.9c47.87-80.883 146.04-44.394 170.21 0 74.551 130.57-130.51 196.54-170.21 302.9z"/>
+  </g>
+  <g transform="translate(-960.58 853.93)" clip-path="url(#b)" fill="#f00" filter="url(#e)">
+   <path d="m1349.1-106.15v-302.9c-47.87-80.883-146.04-44.394-170.21 0-74.551 130.57 130.51 196.54 170.21 302.9z"/>
+   <path d="m1349.1-106.15v-302.9c47.87-80.883 146.04-44.394 170.21 0 74.551 130.57-130.51 196.54-170.21 302.9z"/>
+  </g>
+  <path d="m370.99 455.64c0 30.719-28.708 20.905-64.581 20.905s-65.328 9.8143-65.328-20.905 29.081-55.622 64.955-55.622 64.955 24.903 64.955 55.622z" fill="url(#d)"/>
+  <path d="m535.62 455.26c0 30.719-28.708 20.905-64.582 20.905s-65.328 9.8143-65.328-20.905 29.081-55.622 64.955-55.622 64.955 24.903 64.955 55.622z" fill="url(#c)"/>
+ </g>
+</svg>

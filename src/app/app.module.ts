@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { DiceComponent } from './dice/dice.component';
 import { Game1Component } from './games/game1.component';
 import { Game2Component } from './games/game2.component';
+import { ReadingGameComponent } from './reading-game/reading-game.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { Game2Component } from './games/game2.component';
     DiceComponent,
     Game1Component,
     Game2Component,
+    ReadingGameComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +33,7 @@ import { Game2Component } from './games/game2.component';
     RouterModule.forRoot([
       {path: 'game1', component: Game1Component},
       {path: 'game2', component: Game2Component},
+      {path: 'reading', component: ReadingGameComponent},
       {path: '**', redirectTo: 'game1'},
     ]),
   ],

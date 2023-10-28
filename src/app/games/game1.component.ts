@@ -22,7 +22,6 @@ import { StateService } from '../state.service';
     `,
   styles: ['.correctAnswer { margin-top: 40px; }']
 })
-
 export class Game1Component extends Game {
   stateService: StateService;
   constructor(stateService: StateService) {
