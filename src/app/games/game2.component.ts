@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Game } from '../game';
+import { StateService } from '../state.service';
 
 @Component({
   selector: 'app-game2',
@@ -22,7 +23,22 @@ import { Game } from '../game';
   styles: ['.excersizeContainer { display: flex; flex-wrap: wrap; width: 350px; gap: 0 20px; justify-content: center; }']
 })
 export class Game2Component extends Game {
-  constructor() {
-    super(4, 20);
+  stateService: StateService;
+  constructor(stateService: StateService) {
+    super();
+    this.stateService = stateService;
+    this.newGame();
+  }
+  
+  override getMax(): number {
+    const difficulty = this.stateService.getDifficulty();
+    switch (this.stateService.getDifficulty()) {
+      case 'Easy': return 10;
+      case 'Hard': return 25;
+      default: throw new Error('unknown Difficulty value: ' + difficulty);
+    }
+  }
+  override getNumberOfOptions(): number {
+    return 4;
   }
 }

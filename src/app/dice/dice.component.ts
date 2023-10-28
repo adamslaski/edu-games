@@ -47,7 +47,7 @@ export class DiceComponent {
       case 23: return [5, 4, 5, 4, 5];
       case 24: return [5, 5, 4, 5, 5];
       case 25: return [5, 5, 5, 5, 5];
-      default: throw new Error("Can't display more than 25");
+      default: throw new Error("Can't display more than 25. Requested value: " + this.n);
     }
   }
 

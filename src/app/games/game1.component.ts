@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Game } from '../game';
+import { StateService } from '../state.service';
 
 @Component({
   selector: 'app-game1',
@@ -23,7 +24,21 @@ import { Game } from '../game';
 })
 
 export class Game1Component extends Game {
-  constructor() {
-    super(3, 20);
+  stateService: StateService;
+  constructor(stateService: StateService) {
+    super();
+    this.stateService = stateService;
+    this.newGame();
   }
+  override getMax(): number {
+    const difficulty = this.stateService.getDifficulty();
+    switch (difficulty) {
+      case 'Easy': return 10;
+      case 'Hard': return 25;
+      default: throw new Error('unknown Difficulty value: ' + difficulty);
+    }
+  }
+  override getNumberOfOptions(): number {
+    return 3;
+  }  
 }

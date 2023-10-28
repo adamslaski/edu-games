@@ -1,18 +1,13 @@
 export abstract class Game {
   options!: number[];
   answer!: number;
-  numberOfOptions: number;
-  max!: number;
 
-  constructor(numberOfOptions: number, max: number) {
-    this.numberOfOptions = numberOfOptions;
-    this.max = max;
-    this.newGame();
-  }
+  abstract getMax(): number;
+  abstract getNumberOfOptions(): number;
 
   newGame() {
-    this.options = getOptions(7, this.max, this.numberOfOptions);
-    this.answer = this.options[Math.floor(Math.random() * 3)];    
+    this.options = getOptions(7, this.getMax(), this.getNumberOfOptions());
+    this.answer = this.options[Math.floor(Math.random() * this.options.length)];    
   }
 
   playError() { 
