@@ -1,4 +1,5 @@
 body {
+  background-color: #fafafa;
   margin: 0;
   font-family: 'Verdana', 'Helvetica Neue',
     sans-serif;
@@ -16,30 +17,31 @@ body {
   cursor: pointer;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .excersizeContainer {
     width: 80%;
-    font-size: 40px;
+    font-size: 45px;
   }
 }
 
-@media screen and (max-width: 700px) and (min-width: 400px) {
+@media screen and (max-width: 700px) and (min-width: 450px) {
   .excersizeContainer {
     width: 80%;
-    font-size: 70px;
+    font-size: 80px;
   }
 }
 
 @media only screen and (min-width: 700px) {
   .excersizeContainer {
     width: 600px;
-    font-size: 100px;
+    font-size: 120px;
   }
 }
 
 .correctAnswer {
   text-align: center;
   font-size: 150px;
+  padding-top: 40px;
 }
 
 .option {
@@ -58,3 +60,5 @@ span.levelSettings {
   padding: 9px;
   border-radius: 6px;
 }
+
+html, body { height: 100%; }
