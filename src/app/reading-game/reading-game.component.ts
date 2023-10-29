@@ -1,23 +1,24 @@
 import { Component } from '@angular/core';
 
 import { Idea, groupedIdeas, ideas } from './ideas';
-import { Game, shuffle } from '../game';
 import { StateService } from '../state.service';
+import { Riddle, gameUtils } from '../gameUtils';
+import { SoundService } from '../sound.service';
 
 @Component({
   selector: 'app-game1',
   template: `
-    <div class="correctAnswer">{{answerIdea.word}}</div>
+    <div class="correctAnswer">{{riddle.answer.word}}</div>
     <div class="excersizeContainer">
-      <ng-container *ngFor="let option of optionsIdea">
-        <ng-container  *ngIf="option.word === answerIdea.word; then thenBlock else elseBlock"/>
+      <ng-container *ngFor="let option of riddle.options">
+        <ng-container  *ngIf="option.word === riddle.answer.word; then thenBlock else elseBlock"/>
         <ng-template #thenBlock>
-          <span (click)="playFanfare()">    
+          <span (click)="announceWin()">    
             <img [src]="option.url">
           </span>
         </ng-template>  
         <ng-template #elseBlock>
-          <span (click)="playError()">
+          <span (click)="soundService.playError()">
             <img [src]="option.url">
           </span>
         </ng-template>  
@@ -44,39 +45,28 @@ import { StateService } from '../state.service';
   ]
 
 })
-export class ReadingGameComponent extends Game {
-  stateService: StateService;
-  ideas = ideas;
-  optionsIdea!: Idea[];
-  answerIdea!: Idea;
-  constructor(stateService: StateService) {
-    super();
-    this.stateService = stateService;
-    this.newGame();
+export class ReadingGameComponent {
+  riddle: Riddle<Idea>;
+  constructor(public stateService: StateService, public soundService: SoundService) {
+    this.riddle = this.getNewRiddle();
   }
-  override newGame(): void {
-    switch (this.stateService.getDifficulty()) {
-      case 'Easy': 
-      console.log('easy');
-        this.optionsIdea = shuffle(Array.from(ideas.keys())).slice(0, 3).map(x => ideas[x]);
-        this.answerIdea = this.optionsIdea[Math.floor(Math.random() * this.optionsIdea.length)];
-        break;
-      case 'Hard':
-        console.log('hsrd');
-        const arr = groupedIdeas[Math.floor(Math.random() * groupedIdeas.length)];
-        console.log('hsrd', arr);
 
-        this.optionsIdea = shuffle(Array.from(arr.keys())).slice(0, 3).map(x => arr[x]);
-        this.answerIdea = this.optionsIdea[Math.floor(Math.random() * this.optionsIdea.length)];
-        break;
+  getNewRiddle(): Riddle<Idea> {
+    const difficulty = this.stateService.getDifficulty();
+    switch (difficulty) {
+      case 'Easy': 
+        return gameUtils.getRiddle(ideas, 3);
+      case 'Hard':
+        const arr = groupedIdeas[Math.floor(Math.random() * groupedIdeas.length)];
+        return gameUtils.getRiddle(arr, 3);
+
       default:
         throw new Error('Value unknown: ' + this.stateService.getDifficulty());
     }
   }
-  override getMax(): number {
-    throw new Error('Method not implemented.');
-  }
-  override getNumberOfOptions(): number {
-    throw new Error('Method not implemented.');
+
+  announceWin() {
+    this.soundService.playFanfare();
+    this.riddle = this.getNewRiddle();
   }
 }
