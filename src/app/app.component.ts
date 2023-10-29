@@ -62,7 +62,7 @@ export class AppComponent {
       <p>Te gry edukacyjne stworzyłem dla mojej córki Łucji, aby pomóc jej w nauce liczenia i czytania. 
         Zapraszamy wszystkie dzieci do wspólnej zabawy!</p>
       <p>Projekt dostępny jest na wolnej licencji EPL 2.0, 
-        źródła dostępne są <a href="https://github.com/adamslaski/numbers-game">tutaj</a>.</p>
+        źródła dostępne są <a href="https://github.com/adamslaski/edu-games">tutaj</a>.</p>
       <p>Rysunki pobrałem z darmowego serwisu <a href="https://pixabay.com/">Pixabay</a>. 
         Serdeczne podziękowania dla wszystkich kontrybutorów Pixabay.</p>
 
