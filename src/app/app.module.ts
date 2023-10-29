@@ -6,6 +6,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule}  from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatDialogModule } from '@angular/material/dialog';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations'
 
 import { AppComponent } from './app.component';
@@ -30,6 +31,7 @@ import { ReadingGameComponent } from './reading-game/reading-game.component';
     MatListModule,
     NoopAnimationsModule,
     MatButtonToggleModule,
+    MatDialogModule,
     RouterModule.forRoot([
       {path: 'game1', component: Game1Component},
       {path: 'game2', component: Game2Component},
