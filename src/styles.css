@@ -1,41 +1,19 @@
 body {
   background-color: #fafafa;
   margin: 0;
-  font-family: 'Verdana', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  font-family: Verdana, Tahoma, sans-serif;
+ }
 
 .excersizeContainer {
   margin: 10px auto 0;
   display: flex;
   justify-content: space-between;
+  width: 80%;
+  font-size: 15vmin;
 }
 
 .excersizeContainer > span {
   cursor: pointer;
-}
-
-@media screen and (max-width: 450px) {
-  .excersizeContainer {
-    width: 80%;
-    font-size: 45px;
-  }
-}
-
-@media screen and (max-width: 700px) and (min-width: 450px) {
-  .excersizeContainer {
-    width: 80%;
-    font-size: 80px;
-  }
-}
-
-@media only screen and (min-width: 700px) {
-  .excersizeContainer {
-    width: 600px;
-    font-size: 120px;
-  }
 }
 
 .correctAnswer {

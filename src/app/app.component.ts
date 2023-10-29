@@ -16,6 +16,7 @@ import { MatDialog, MAT_DIALOG_DATA, MatDialogRef, MatDialogModule } from '@angu
           <a mat-list-item routerLinkActive="link-active" routerLink="/game1">Liczby</a>
           <a mat-list-item routerLinkActive="link-active" routerLink="/game2">Kropki</a>
           <a mat-list-item routerLinkActive="link-active" routerLink="/reading">Czytanie</a>
+          <a mat-list-item routerLinkActive="link-active" routerLink="/sum">Dodawanie</a>
         </mat-nav-list>
         <hr/>
         <div style="display: grid; row-gap: 10px;">

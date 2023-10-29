@@ -36,7 +36,7 @@ export class Game2Component {
   getNewRiddle(difficulty: Difficulty): Riddle<number> {
     switch (difficulty) {
       case 'Easy': return gameUtils.getNumberRiddle(10, 4);
-      case 'Hard': return gameUtils.getNumberRiddleInRange(25, 7, 4);
+      case 'Hard': return gameUtils.getNumberRiddleInRange(1, 25, 7, 4);
       default: throw new Error('unknown Difficulty value: ' + difficulty);
     }  
   }

@@ -7,6 +7,9 @@ export class GameUtils {
   randomInt(max: number): number {
     return Math.floor(Math.random() * max);
   }
+  randomIntFromInclusiveRange(min: number, max: number): number {
+    return this.randomInt(max-min+1) + min;
+  }
   getRandomValues(length: number): Uint32Array {
     return window.self.crypto.getRandomValues(new Uint32Array(length));
   }
@@ -22,21 +25,25 @@ export class GameUtils {
     return {options, answer};
   }
   getNumberRiddle(max: number, numberOfOptions: number): Riddle<number> {
-    return this.getNumberRiddleInRange(max, max, numberOfOptions);
+    return this.getNumberRiddleInRange(1, max, max, numberOfOptions);
   }
-  getNumberRiddleInRange(max: number, range: number, numberOfOptions: number): Riddle<number> {
-    if (max < range) {
+  getNumberRiddleInRange(min: number, max: number, range: number, numberOfOptions: number): Riddle<number> {
+    if (min > max) {
+      throw new Error("max must be greater than min");
+    }
+    if ((max - min + 1) < range) {
       throw new Error("max must not be less than range");
     }
     if (numberOfOptions > range) {
       throw new Error("numberOfOptions must not be less or equal to range");
     }
     
-    const start = this.randomInt(max - range) + 1;
+    const start = this.randomIntFromInclusiveRange(min, max - range + 1);
     const arr = Array.from(Array(range).keys()).map(e => e + start);
     const options = this.shuffle(arr).slice(0, numberOfOptions);
+
     const answer = this.pickOne(options);
-  
+    console.log(answer);
     return {options, answer};
   }
   pickOne<T>(arr: T[]): T {

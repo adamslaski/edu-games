@@ -39,20 +39,46 @@ describe('gameUtils', () => {
   it('should get number riddle in range reverse', () => {
     const gameUtils = new GameUtils();
 
-    spyOn(gameUtils, 'getRandomValues').and.returnValues(new Uint32Array([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]));
+    spyOn(gameUtils, 'getRandomValues').and.returnValues(new Uint32Array([5, 4, 3, 2, 1]));
     spyOn(gameUtils, 'randomInt').and.returnValues(0, 0);
 
 
-    expect(gameUtils.getNumberRiddleInRange(10, 5, 2)).toEqual({ options: [5, 4], answer: 5});
+    expect(gameUtils.getNumberRiddleInRange(1, 10, 5, 2)).toEqual({ options: [5, 4], answer: 5});
   });
 
   it('should get number riddle in range', () => {
     const gameUtils = new GameUtils();
 
-    spyOn(gameUtils, 'getRandomValues').and.returnValues(new Uint32Array([1,2,3,4,5,6,7,8,9,10]));
+    spyOn(gameUtils, 'getRandomValues').and.returnValues(new Uint32Array([1,2,3,4,5]));
     spyOn(gameUtils, 'randomInt').and.returnValues(0, 0);
 
 
-    expect(gameUtils.getNumberRiddleInRange(10, 5, 2)).toEqual({ options: [1, 2], answer: 1});
+    expect(gameUtils.getNumberRiddleInRange(1, 10, 5, 2)).toEqual({ options: [1, 2], answer: 1});
+  });
+
+  it('should get number riddle with max from the range', () => {
+    const gameUtils = new GameUtils();
+
+    spyOn(gameUtils, 'getRandomValues').and.returnValues(new Uint32Array([1,2,3,4,5,6,7,8,9,10].reverse()));
+    spyOn(gameUtils, 'randomInt').and.callFake(n => n - 1);
+
+
+    expect(gameUtils.getNumberRiddleInRange(1, 10, 5, 2)).toEqual({ options: [10, 9], answer: 9});
+  });
+
+  it('should get random number from the range (min)', () => {
+    const gameUtils = new GameUtils();
+
+    spyOn(gameUtils, 'randomInt').and.returnValue(0);
+
+    expect(gameUtils.randomIntFromInclusiveRange(30, 50)).toEqual(30);
+  });
+
+  it('should get random number from the range (max)', () => {
+    const gameUtils = new GameUtils();
+
+    spyOn(gameUtils, 'randomInt').and.callFake(n => n-1);
+
+    expect(gameUtils.randomIntFromInclusiveRange(30, 50)).toEqual(50);
   });
 });

@@ -19,7 +19,7 @@ export class DiceComponent {
     return Math.round(this.size * 0.06);
   }
 
-  private getNumbers(): number[] {
+  public getNumbers(): number[] {
     switch (this.n) {
       case 0: return [];
       case 1: return [1];

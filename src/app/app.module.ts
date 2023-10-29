@@ -14,6 +14,7 @@ import { DiceComponent } from './dice/dice.component';
 import { Game1Component } from './games/game1.component';
 import { Game2Component } from './games/game2.component';
 import { ReadingGameComponent } from './reading-game/reading-game.component';
+import { SumGameComponent } from './games/sum-game.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ReadingGameComponent } from './reading-game/reading-game.component';
     Game1Component,
     Game2Component,
     ReadingGameComponent,
+    SumGameComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +38,7 @@ import { ReadingGameComponent } from './reading-game/reading-game.component';
       {path: 'game1', component: Game1Component},
       {path: 'game2', component: Game2Component},
       {path: 'reading', component: ReadingGameComponent},
+      {path: 'sum', component: SumGameComponent},
       {path: '**', redirectTo: 'game1'},
     ]),
   ],
