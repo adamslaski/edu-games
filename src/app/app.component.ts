@@ -1,5 +1,5 @@
 import { Component, Renderer2, ViewChild } from '@angular/core';
-import { StateService } from './state.service';
+import { Difficulty, StateService } from './state.service';
 import { MatIconAnchor } from '@angular/material/button';
 
 @Component({
@@ -17,7 +17,7 @@ import { MatIconAnchor } from '@angular/material/button';
           <a mat-list-item routerLinkActive="link-active" routerLink="/reading">Czytanie</a>
         </mat-nav-list>
         <hr/>
-        <mat-button-toggle-group (change)="stateService.setDifficulty($event.value)" [value]="stateService.getDifficulty()">
+        <mat-button-toggle-group (change)="stateService.setDifficulty($event.value)" [value]="currentDifficulty">
           <mat-button-toggle value="Easy">Łatwe</mat-button-toggle>
           <mat-button-toggle value="Hard">Trudne</mat-button-toggle>
         </mat-button-toggle-group>
@@ -30,7 +30,12 @@ import { MatIconAnchor } from '@angular/material/button';
 })
 export class AppComponent {
   @ViewChild('hamburger') hamburger?: MatIconAnchor; 
-  constructor(public stateService: StateService, private renderer: Renderer2) {}
+  currentDifficulty!: Difficulty;
+  constructor(public stateService: StateService, private renderer: Renderer2) {
+    stateService.getDifficulty().subscribe(difficculty => {
+      this.currentDifficulty = difficculty;
+    });
+  }
   toggleHamburger(opened: boolean) {
     if (this.hamburger) {
       const native = this.hamburger?._elementRef.nativeElement;

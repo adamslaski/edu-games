@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { StateService } from '../state.service';
+import { Difficulty, StateService } from '../state.service';
 import { SoundService } from '../sound.service';
 import { Riddle, gameUtils } from '../gameUtils';
 
@@ -24,12 +24,15 @@ import { Riddle, gameUtils } from '../gameUtils';
   styles: ['.correctAnswer { margin-top: 40px; }']
 })
 export class Game1Component {
-  riddle: Riddle<number>;
+  riddle!: Riddle<number>;
+  private currentDifficulty!: Difficulty;
   constructor(public stateService: StateService, public soundService: SoundService) {
-    this.riddle = this.getNewRiddle();
+    stateService.getDifficulty().subscribe(difficculty => {
+      this.currentDifficulty = difficculty;
+      this.riddle = this.getNewRiddle(difficculty); 
+    });
   }
-  getNewRiddle(): Riddle<number> {
-    const difficulty = this.stateService.getDifficulty();
+  getNewRiddle(difficulty: Difficulty): Riddle<number> {
     switch (difficulty) {
       case 'Easy': return gameUtils.getNumberRiddle(10, 3);
       case 'Hard': return gameUtils.getNumberRiddleInRange(25, 7, 3);
@@ -38,6 +41,6 @@ export class Game1Component {
   }
   announceWin() {
     this.soundService.playFanfare();
-    this.riddle = this.getNewRiddle();
+    this.riddle = this.getNewRiddle(this.currentDifficulty);
   }
 }

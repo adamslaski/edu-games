@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 
 import { Idea, groupedIdeas, ideas } from './ideas';
-import { StateService } from '../state.service';
+import { Difficulty, StateService } from '../state.service';
 import { Riddle, gameUtils } from '../gameUtils';
 import { SoundService } from '../sound.service';
 
 @Component({
   selector: 'app-game1',
   template: `
-    <div class="correctAnswer">{{riddle.answer.word}}</div>
+    <div class="correctAnswer" 
+      [ngStyle]="{'font-variant': currentDifficulty == 'Easy' ? 'small-caps' : 'normal' }"
+      >{{riddle.answer.word}}</div>
     <div class="excersizeContainer">
       <ng-container *ngFor="let option of riddle.options">
         <ng-container  *ngIf="option.word === riddle.answer.word; then thenBlock else elseBlock"/>
@@ -46,13 +48,16 @@ import { SoundService } from '../sound.service';
 
 })
 export class ReadingGameComponent {
-  riddle: Riddle<Idea>;
+  riddle!: Riddle<Idea>;
+  currentDifficulty!: Difficulty;
   constructor(public stateService: StateService, public soundService: SoundService) {
-    this.riddle = this.getNewRiddle();
+    stateService.getDifficulty().subscribe(difficculty => {
+      this.currentDifficulty = difficculty;
+      this.riddle = this.getNewRiddle(difficculty); 
+    });
   }
 
-  getNewRiddle(): Riddle<Idea> {
-    const difficulty = this.stateService.getDifficulty();
+  getNewRiddle(difficulty: Difficulty): Riddle<Idea> {
     switch (difficulty) {
       case 'Easy': 
         return gameUtils.getRiddle(ideas, 3);
@@ -67,6 +72,6 @@ export class ReadingGameComponent {
 
   announceWin() {
     this.soundService.playFanfare();
-    this.riddle = this.getNewRiddle();
+    this.riddle = this.getNewRiddle(this.currentDifficulty);
   }
 }
