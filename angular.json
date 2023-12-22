@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "edu-games:build:production"
+              "buildTarget": "edu-games:build:production"
             },
             "development": {
-              "browserTarget": "edu-games:build:development"
+              "buildTarget": "edu-games:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "edu-games:build"
+            "buildTarget": "edu-games:build"
           }
         },
         "test": {
